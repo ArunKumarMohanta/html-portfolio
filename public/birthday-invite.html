@@ -3,6 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <title>birthday invite</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Bounce animation for the main heading to add fun energy */
+      h1 {
+        animation: bounce 2s infinite;
+        cursor: default;
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+        40% { transform: translateY(-20px); }
+        60% { transform: translateY(-10px); }
+      }
+      
+      /* Interactive hover effect for the birthday cake image */
+      img {
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+      img:hover {
+        transform: scale(1.1);
+      }
+      
+      /* Style links to be more interactive */
+      a {
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+      }
+      a:hover {
+        color: #e91e63;
+        text-decoration: underline;
+      }
+      
+      /* Hover effect on list items for added interactivity */
+      ul li {
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+      }
+      ul li:hover {
+        background-color: rgba(233, 30, 99, 0.1);
+      }
+    </style>
   </head>
   <body>
     <!-- This is one possible solution -->
