@@ -112,3 +112,8 @@ footer {
     height: 150px;
   }
 }
+
+/* Custom style for .solver class */
+.solver {
+  display: inline-block;
+}
