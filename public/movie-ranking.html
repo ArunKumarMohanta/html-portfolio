@@ -1,47 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>movie ranking</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      /* Fade-in effect for the whole page */
-      body {
-        animation: fadeIn 1.5s ease-in;
-      }
-      @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
-      
-      /* Hover effect for movie titles */
-      h3 {
-        transition: transform 0.3s ease, color 0.3s ease;
-        cursor: pointer;
-      }
-      h3:hover {
-        transform: scale(1.05);
-        color: #0d47a1;
-      }
-      
-      /* Subtle interactive background effect on paragraphs */
-      p {
-        transition: background 0.3s ease;
-      }
-      p:hover {
-        background: rgba(25, 118, 210, 0.1);
-      }
-    </style>
-  </head>
-  <body>
-    <h1>The Best Movies According to Arun</h1>
-    <h2>My top 3 movies of all-time.</h2>
-    <hr />
-    <h3>Spirited Away</h3>
-    <p>This is my favourite anime. I love the beautiful images.</p>
-    <h3>Ex Machina</h3>
-    <p>Really cool sci-fi movie.</p>
-    <h3>Drive</h3>
-    <p>Super beautiful film. Really artistic.</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Ranking</title>
+  <style>
+    /* Import Google Font */
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+    
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      padding: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #424242;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 30px 0;
+    }
+    h3 {
+      font-size: 1.5rem;
+      color: #1976d2;
+      cursor: pointer;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    h3:hover {
+      transform: scale(1.05);
+      color: #0d47a1;
+    }
+    p {
+      margin-bottom: 20px;
+      transition: background 0.3s ease;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    p:hover {
+      background: #e3f2fd;
+    }
+    @media (max-width: 600px) {
+      body { padding: 10px; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.2rem; }
+      p { font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <h1>The Best Movies According to Arun</h1>
+  <h2>My top 3 movies of all-time.</h2>
+  <hr />
+  <h3>Spirited Away</h3>
+  <p>This is my favourite anime. I love the beautiful images.</p>
+  <h3>Ex Machina</h3>
+  <p>Really cool sci-fi movie.</p>
+  <h3>Drive</h3>
+  <p>Super beautiful film. Really artistic.</p>
+</body>
 </html>
