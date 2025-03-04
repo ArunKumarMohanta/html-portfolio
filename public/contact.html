@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>contact</title>
-     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Contact Me</h1>
-    <p>Tel: 955610XXXX</p>
-    <p>Email: arunkumarmohanta989@gmail.com</p>
-    <p>Address:</p>
-    <p>
-      123 North Street<br />
-      Some City<br />
-      Some Country <br />
-    </p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <style>
+    /* Import Google Font */
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+    
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #e0f7fa;
+      color: #333;
+      padding: 20px;
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #00796b;
+      margin-bottom: 30px;
+    }
+    p {
+      background: #fff;
+      margin: 10px auto;
+      padding: 15px;
+      border-radius: 8px;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+    p:hover {
+      background: #b2dfdb;
+    }
+    @media (max-width: 600px) {
+      body { padding: 10px; }
+      h1 { font-size: 2rem; }
+      p { padding: 10px; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Me</h1>
+  <p>Tel: 955610XXXX</p>
+  <p>Email: arunkumarmohanta989@gmail.com</p>
+  <p>Address:</p>
+  <p>
+    123 North Street<br>
+    Some City<br>
+    Some Country
+  </p>
+</body>
 </html>
