@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>My hobbies</title>
-         <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>My Hobbies</h1>
-        <ul>
-            <li>Video Editing: Creating and editing engaging videos using DaVinci Resolve.</li>
-            <li>Blogging: Writing about technology, business, movies, and history on Arun Talks.</li>
-            <li>Learning New Technologies: Exploring tools and frameworks like Kivy and Tkinter for app development.</li>
-            <li>Coding Projects: Building innovative solutions like sentiment analysis programs and GUI-based applications.</li>
-            <li>Watching YouTube Channels: Following content on BNFTV, DesiNerd, PJ Explained, and ComicVerse for entertainment and insights.</li>
-            <li>Attending Tech Events: Participating in sessions like Technozion to learn from industry experts.</li>
-        </ul>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>My Hobbies</title>
+  <style>
+    /* Import Google Font */
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      padding: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      background: #fff;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      cursor: pointer;
+    }
+    li:hover {
+      transform: translateX(10px);
+      background-color: #f1f1f1;
+    }
+    @media (max-width: 600px) {
+      body { padding: 10px; }
+      h1 { font-size: 2rem; }
+      li { font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <h1>My Hobbies</h1>
+  <ul>
+    <li>Video Editing: Creating and editing engaging videos using DaVinci Resolve.</li>
+    <li>Blogging: Writing about technology, business, movies, and history on Arun Talks.</li>
+    <li>Learning New Technologies: Exploring tools and frameworks like Kivy and Tkinter for app development.</li>
+    <li>Coding Projects: Building innovative solutions like sentiment analysis programs and GUI-based applications.</li>
+    <li>Watching YouTube Channels: Following content on BNFTV, DesiNerd, PJ Explained, and ComicVerse for entertainment and insights.</li>
+    <li>Attending Tech Events: Participating in sessions like Technozion to learn from industry experts.</li>
+  </ul>
+</body>
 </html>
