@@ -3,6 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <title>movie ranking</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Fade-in effect for the whole page */
+      body {
+        animation: fadeIn 1.5s ease-in;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      
+      /* Hover effect for movie titles */
+      h3 {
+        transition: transform 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+      }
+      h3:hover {
+        transform: scale(1.05);
+        color: #0d47a1;
+      }
+      
+      /* Subtle interactive background effect on paragraphs */
+      p {
+        transition: background 0.3s ease;
+      }
+      p:hover {
+        background: rgba(25, 118, 210, 0.1);
+      }
+    </style>
   </head>
   <body>
     <h1>The Best Movies According to Arun</h1>
