@@ -2,176 +2,221 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio Projects</title>
-  <style>
-    /* Import Roboto font for a modern look */
-    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arun Kumar Mohanta | Portfolio Projects</title>
 
-    /* Global styles */
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+  <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
       font-family: 'Roboto', sans-serif;
       line-height: 1.6;
       background: #f5f5f5;
       color: #424242;
       padding: 20px;
-      animation: fadeIn 1.5s ease-in;
       max-width: 1000px;
       margin: 0 auto;
+      animation: fadeIn 1.2s ease-in;
     }
-    
+
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
-    
-    /* Headings */
+
     h1, h2, h3 {
       font-weight: 500;
       margin-bottom: 15px;
       color: #212121;
+      text-align: center;
     }
-    
+
     h1 {
       font-size: 2.8rem;
-      text-align: center;
       margin-top: 20px;
       animation: slideInDown 1s ease;
     }
-    
+
     @keyframes slideInDown {
-      from { transform: translateY(-50px); opacity: 0; }
+      from { transform: translateY(-40px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
-    
+
     h2 {
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 20px;
+      font-size: 1.8rem;
       color: #424242;
+      margin-bottom: 20px;
     }
-    
+
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       color: #1976d2;
-      text-align: center;
-      cursor: pointer;
       transition: transform 0.3s ease, color 0.3s ease;
     }
-    
+
+    h3 a {
+      text-decoration: none;
+      color: inherit;
+    }
+
     h3:hover {
       transform: scale(1.05);
       color: #0d47a1;
     }
-    
-    /* Horizontal rule */
+
+    p {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
     hr {
       border: none;
       border-top: 1px solid #e0e0e0;
       margin: 30px 0;
     }
-    
-    /* Image styling */
-    .project-image {
-      display: block;
-      margin: 20px auto;
-      border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-    
-    .project-image:hover {
-      transform: scale(1.05);
-    }
-    
-    /* Project container */
+
     .project-container {
-      margin-bottom: 50px;
+      margin-bottom: 40px;
       background: #ffffff;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
     }
-    
-    /* Solver gallery */
+
+    .project-container:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-image {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-image:hover {
+      transform: scale(1.05);
+    }
+
     .solver {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 20px;
+      gap: 15px;
+      margin-top: 15px;
     }
-    
+
     .solver img {
       max-width: 30%;
-      border-radius: 5px;
+      height: auto;
+      border-radius: 6px;
       transition: transform 0.3s ease;
     }
-    
+
     .solver img:hover {
       transform: scale(1.05);
     }
-    
-    /* Responsive design */
+
     @media (max-width: 768px) {
-      h1 { font-size: 2.4rem; }
-      h2 { font-size: 1.8rem; }
-      h3 { font-size: 1.3rem; }
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.6rem; }
+      h3 { font-size: 1.2rem; }
       .solver img { max-width: 45%; }
     }
-    
+
     @media (max-width: 480px) {
-      h1 { font-size: 2rem; }
-      h2 { font-size: 1.5rem; }
-      h3 { font-size: 1.2rem; }
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.4rem; }
+      h3 { font-size: 1.1rem; }
       .solver img { max-width: 100%; }
     }
+
   </style>
 </head>
+
 <body>
-  <h1>Arun's Projects</h1>
-  <h2>UI/UX Designer & Web Developer</h2>
-  <hr/>
 
-  <div class="project-container">
-    <h3><a href="https://www.figma.com/design/RFqxg9T1DxkAsPZW16F1xa/EES-WEBSITE?node-id=2-934&t=qPF1nqw3ttv4GU8v-0" target="_blank">EES Website UI Design (Figma)</a></h3>
-    <p style="text-align: center; margin-top: 10px;">Complete visual layout and component-based UI design for the Electrical Engineering Society.</p>
-  </div>
+  <header>
+    <h1>Arun Kumar Mohanta</h1>
+    <h2>UI/UX Designer & Web Developer</h2>
+  </header>
 
-  <div class="project-container">
-    <h3><a href="https://arunkumarmohanta.github.io/frontend/" target="_blank">ZhenID: Media Registration Prototype [Web]</a> </h3>
-    <p style="text-align: center; margin-top: 10px;">A functional frontend prototype for media authentication built with HTML, CSS, and JS.</p>
-    <img class="project-image" src="./assets/images/image_30d286.png" alt="screenshot of ZhenID homepage" height="300"/>
-  </div>
-  
-  <div class="project-container">
-    <h3><a href="https://github.com/ArunKumarMohanta/YouTube-Videos-Analyser-using-Sentiment-Analysis-" target="_blank">YouTube Video Emotion Analyzer Application</a> </h3>
-    <img class="project-image" src="./assets/images/youtube-project.png" alt="screenshot of YouTube Videos Analyser project" height="250"/>
-  </div>
-  
-  <div class="project-container">
-    <h3><a href="https://github.com/ArunKumarMohanta/LinearEquationSolver-with-GUI" target="_blank">Linear Equation Solver with GUI</a></h3>
+  <hr>
+
+  <section class="project-container">
+    <h3>
+      <a href="https://www.figma.com/design/RFqxg9T1DxkAsPZW16F1xa/EES-WEBSITE?node-id=2-934&t=qPF1nqw3ttv4GU8v-0"
+         target="_blank" rel="noopener">
+        EES Website UI Design (Figma)
+      </a>
+    </h3>
+    <p>Complete visual layout and component-based UI design for the Electrical Engineering Society.</p>
+  </section>
+
+  <section class="project-container">
+    <h3>
+      <a href="https://arunkumarmohanta.github.io/frontend/"
+         target="_blank" rel="noopener">
+        ZhenID: Media Registration Prototype [Web]
+      </a>
+    </h3>
+    <p>A functional frontend prototype for media authentication built with HTML, CSS, and JavaScript.</p>
+    <img class="project-image"
+         src="./assets/images/image_30d286.png"
+         alt="Screenshot of ZhenID homepage">
+  </section>
+
+  <section class="project-container">
+    <h3>
+      <a href="https://github.com/ArunKumarMohanta/YouTube-Videos-Analyser-using-Sentiment-Analysis-"
+         target="_blank" rel="noopener">
+        YouTube Video Emotion Analyzer Application
+      </a>
+    </h3>
+    <img class="project-image"
+         src="./assets/images/youtube-project.png"
+         alt="Screenshot of YouTube Video Emotion Analyzer application">
+  </section>
+
+  <section class="project-container">
+    <h3>
+      <a href="https://github.com/ArunKumarMohanta/LinearEquationSolver-with-GUI"
+         target="_blank" rel="noopener">
+        Linear Equation Solver with GUI
+      </a>
+    </h3>
     <div class="solver">
-      <img src="./assets/images/solver1.png" alt="screenshot of linear equation solver project" height="200"/>
-      <img src="./assets/images/solver2.png" alt="screenshot of linear equation solver project" height="200"/>
-      <img src="./assets/images/solver3.png" alt="screenshot of linear equation solver project" height="200"/>
+      <img src="./assets/images/solver1.png" alt="Linear Equation Solver interface screenshot 1">
+      <img src="./assets/images/solver2.png" alt="Linear Equation Solver interface screenshot 2">
+      <img src="./assets/images/solver3.png" alt="Linear Equation Solver interface screenshot 3">
     </div>
-  </div>
-  
-  <div class="project-container">
+  </section>
+
+  <section class="project-container">
     <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-    <img class="project-image" src="./assets/images/movie-ranking.png" alt="screenshot of Movie Ranking project" height="200"/>
-  </div>
-  
-  <div class="project-container">
+    <img class="project-image"
+         src="./assets/images/movie-ranking.png"
+         alt="Screenshot of Movie Ranking project">
+  </section>
+
+  <section class="project-container">
     <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-    <img class="project-image" src="./assets/images/birthday-invite.png" alt="screenshot of Birthday Invite project" height="200"/>
-  </div>
+    <img class="project-image"
+         src="./assets/images/birthday-invite.png"
+         alt="Screenshot of Birthday Invite project">
+  </section>
 
 </body>
 </html>
