@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
+  <title>My Portfolio Projects</title>
   <style>
     /* Import Roboto font for a modern look */
     @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
@@ -59,6 +59,7 @@
     h3 {
       font-size: 1.5rem;
       color: #1976d2;
+      text-align: center;
       cursor: pointer;
       transition: transform 0.3s ease, color 0.3s ease;
     }
@@ -90,7 +91,11 @@
     
     /* Project container */
     .project-container {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
     
     /* Solver gallery */
@@ -112,67 +117,45 @@
       transform: scale(1.05);
     }
     
-    /* Footer links styling */
-    .footer-links {
-      text-align: center;
-      margin-top: 30px;
-    }
-    
-    .footer-links a {
-      color: #1976d2;
-      text-decoration: none;
-      margin: 0 10px;
-      transition: color 0.3s ease;
-    }
-    
-    .footer-links a:hover {
-      color: #0d47a1;
-    }
-    
     /* Responsive design */
     @media (max-width: 768px) {
-      h1 {
-        font-size: 2.4rem;
-      }
-      h2 {
-        font-size: 1.8rem;
-      }
-      h3 {
-        font-size: 1.3rem;
-      }
-      .solver img {
-        max-width: 45%;
-      }
+      h1 { font-size: 2.4rem; }
+      h2 { font-size: 1.8rem; }
+      h3 { font-size: 1.3rem; }
+      .solver img { max-width: 45%; }
     }
     
     @media (max-width: 480px) {
-      h1 {
-        font-size: 2rem;
-      }
-      h2 {
-        font-size: 1.5rem;
-      }
-      h3 {
-        font-size: 1.2rem;
-      }
-      .solver img {
-        max-width: 100%;
-      }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.2rem; }
+      .solver img { max-width: 100%; }
     }
   </style>
 </head>
 <body>
   <h1>Arun's Projects</h1>
-  <h2>I am a web developer and programmer</h2>
+  <h2>UI/UX Designer & Web Developer</h2>
   <hr/>
-  
+
   <div class="project-container">
-    <h3><a href="https://github.com/ArunKumarMohanta/YouTube-Videos-Analyser-using-Sentiment-Analysis-">YouTube Videos Analyser (Python Project)</a></h3>
-    <img class="project-image" src="./assets/images/youtube-project.png" alt="screenshot of YouTube Videos Analyser project" height="200"/>
+    <h3><a href="https://www.figma.com/design/RFqxg9T1DxkAsPZW16F1xa/EES-WEBSITE?node-id=2-934&t=qPF1nqw3ttv4GU8v-0" target="_blank">EES Website UI Design (Figma)</a></h3>
+    <p style="text-align: center; margin-top: 10px;">Complete visual layout and component-based UI design for the Electrical Engineering Society.</p>
+  </div>
+
+  <div class="project-container">
+    <h3><a href="https://arunkumarmohanta.github.io/frontend/" target="_blank">ZhenID: Media Registration Prototype [Web]</a> [cite: 79]</h3>
+    <p style="text-align: center; margin-top: 10px;">A functional frontend prototype for media authentication built with HTML, CSS, and JS[cite: 81].</p>
+    <img class="project-image" src="./assets/images/image_30d286.jpg" alt="screenshot of ZhenID homepage" height="300"/>
   </div>
   
   <div class="project-container">
-    <h3><a href="https://github.com/ArunKumarMohanta/LinearEquationSolver-with-GUI">LinearEquationSolver-with-GUI</a></h3>
+    <h3><a href="https://github.com/ArunKumarMohanta/YouTube-Videos-Analyser-using-Sentiment-Analysis-" target="_blank">YouTube Video Emotion Analyzer Application</a> [cite: 71]</h3>
+    <img class="project-image" src="./assets/images/youtube-project.png" alt="screenshot of YouTube Videos Analyser project" height="250"/>
+  </div>
+  
+  <div class="project-container">
+    <h3><a href="https://github.com/ArunKumarMohanta/LinearEquationSolver-with-GUI" target="_blank">Linear Equation Solver with GUI</a></h3>
     <div class="solver">
       <img src="./assets/images/solver1.png" alt="screenshot of linear equation solver project" height="200"/>
       <img src="./assets/images/solver2.png" alt="screenshot of linear equation solver project" height="200"/>
@@ -189,12 +172,6 @@
     <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
     <img class="project-image" src="./assets/images/birthday-invite.png" alt="screenshot of Birthday Invite project" height="200"/>
   </div>
-  
-  <hr/>
-  
-  <div class="footer-links">
-    <a href="./public/about.html">About me</a>
-    <a href="./public/contact.html">Contact me</a>
-  </div>
+
 </body>
 </html>
